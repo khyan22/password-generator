@@ -1,6 +1,6 @@
 # Password Generator Starter Code
  ## Summary
- This is a password generator that takes inputs from the user to make a custom password based on number of characters between 8 and 128 and what types of characters the user wants in the password
+ This is a password generator that takes inputs from the user to make a custom password based on number of characters between 8 and 128 and what types of characters the user wants in the password.
  
  ## Technologies
  * HTML - 12.0%
