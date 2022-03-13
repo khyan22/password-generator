@@ -40,59 +40,59 @@ function generatePassword() {
       var character = (lowerCase + numbers + specialChar)[Math.floor(Math.random() * (lowerCase.length + numbers.length + specialChar.length))]
       return character
     }
-  }else if (upperConfirm + numberConfirm + specialConfirm) {
+  }else if (upperConfirm && numberConfirm && specialConfirm) {
     var randomChar = function() {
-      var character = (upperCase + numbers + specialChar)[Math.floor(Math.random() * (upperCase.length + numbers.length + specialChar))]
+      var character = (upperCase + numbers + specialChar)[Math.floor(Math.random() * (upperCase.length + numbers.length + specialChar.length))]
       return character
     }
-  }else if (upperConfirm + lowerConfirm) {
+  }else if (upperConfirm && lowerConfirm) {
     var randomChar = function() {
-      var randomChar = (upperCase + lowerCase)[Math.floor(Math.random() * (upperCase.length + lowerCase.length))]
+      var character = (upperCase + lowerCase)[Math.floor(Math.random() * (upperCase.length + lowerCase.length))]
       return character
     }
-  } else if (upperConfirm + specialConfirm) {
+  } else if (upperConfirm && specialConfirm) {
     var randomChar = function() {
-      var randomChar = (upperCase + specialChar)[Math.floor(Math.random() * (upperCase.length + specialChar.length))]
+      var character = (upperCase + specialChar)[Math.floor(Math.random() * (upperCase.length + specialChar.length))]
       return character
     }
-  } else if (upperConfirm + numberConfirm) {
+  } else if (upperConfirm && numberConfirm) {
     var randomChar = function() {
-      var randomChar = (upperCase + numbers)[Math.floor(Math.random() * (upperCase.length + numbers.length))]
+      var character = (upperCase + numbers)[Math.floor(Math.random() * (upperCase.length + numbers.length))]
       return character
     }
-  } else if (lowerConfirm + specialConfirm) {
+  } else if (lowerConfirm && specialConfirm) {
     var randomChar = function() {
-      var randomChar = (lowerCase + specialChar)[Math.floor(Math.random() * (lowerCase.length + specialChar.length))]
+      var character = (lowerCase + specialChar)[Math.floor(Math.random() * (lowerCase.length + specialChar.length))]
       return character 
     }
-  } else if (lowerConfirm + numberConfirm) {
+  } else if (lowerConfirm && numberConfirm) {
     var randomChar = function() {
-      var randomChar = (lowerCase + numbers)[Math.floor(Math.random() * (lowerCase.length + numbers.length))]
+      var character = (lowerCase + numbers)[Math.floor(Math.random() * (lowerCase.length + numbers.length))]
       return character
     }
-  } else if (numberConfirm + specialConfirm) {
+  } else if (numberConfirm && specialConfirm) {
     var randomChar = function() {
-      var randomChar = (numbers + specialChar)[Math.floor(Math.random() * (numbers.length + specialChar.length))]
+      var character = (numbers + specialChar)[Math.floor(Math.random() * (numbers.length + specialChar.length))]
       return character
     }
   } else if (upperConfirm) {
     var randomChar = function() {
-      var randomChar = (upperCase)[Math.floor(Math.random() * (upperCase.length))]
+      var character = (upperCase)[Math.floor(Math.random() * (upperCase.length))]
       return character
     }
   } else if (lowerConfirm) {
     var randomChar = function() {
-      var randomChar = (lowerCase)[Math.floor(Math.random() * (lowerCase.length))]
+      var character = (lowerCase)[Math.floor(Math.random() * (lowerCase.length))]
       return character
     }
   } else if (specialConfirm) {
     var randomChar = function() {
-      var randomChar = (specialChar)[Math.floor(Math.random() * (specialChar.length))]
+      var character = (specialChar)[Math.floor(Math.random() * (specialChar.length))]
       return character
     }
   } else if (numberConfirm) {
     var randomChar = function() {
-      var randomChar = (numbers)[Math.floor(Math.random() * (numbers.length))]
+      var character = (numbers)[Math.floor(Math.random() * (numbers.length))]
       return character
     }
   }
