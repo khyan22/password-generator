@@ -97,15 +97,18 @@ function generatePassword() {
     }
   }
 
+  //forces user to choose at least one character type 
   if (randomChar === undefined) {
     var randomPassword = "You need to select at least one character type!"
   }
+  //where the password is formed from the inputs
   else {
     var randomPassword = ""
     for (var i = 0; i < passwordLength; i++) {
       randomPassword += randomChar();
     }
   }
+  //end
   return randomPassword
 }
 
